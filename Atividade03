@@ -1,0 +1,27 @@
+//Faça um programa que leia os valores a,b e c. Mostre uma mensagem que informe se a soma de a com b é menor, maior ou igual a c.
+
+            Console.Write("Informe o valor de A: ");
+            double a = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o valor de B: ");
+            double b = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o valor de C: ");
+            double c = double.Parse(Console.ReadLine());
+
+            double soma = a + b;
+
+            if (soma < c )
+            {
+                Console.Write($"A soma de A e B é:{soma} e é MENOR que C {c}");
+            }
+            else if (soma > c)
+            {
+                Console.Write($"A soma de A e B é:{soma} e é MAIOR que C {c}");
+            }
+            else if(soma == c)
+            {
+                Console.Write($"A soma de A e B é:{soma} e é IGUAL a C {c}");
+            }
+
+            Console.ReadKey();

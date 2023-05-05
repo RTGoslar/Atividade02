@@ -1,0 +1,15 @@
+// Faça um programa que receba um número e mostre uma mensagem caso este número seja maior que 10.
+
+            Console.Write("Informe um número: ");
+            double num = double.Parse(Console.ReadLine());
+
+            if (num > 10)
+            {
+                Console.WriteLine("Este número é maior que 10");
+            }
+            else
+            {
+                Console.WriteLine("Este número é menor que 10");
+            }
+
+            Console.ReadKey();

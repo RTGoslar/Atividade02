@@ -1,0 +1,18 @@
+ /*Ler dois valores para váriavel A e B, e efetuar as trocas dos valores de forma que a variável A passe a possuir o valor B e a váriavel
+             B passe a possuir o valor da variável A. Apresentar os valores trocados */
+
+            double a, b, c;
+            Console.Write("Informe o valor de A: ");
+            a = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o valor de B: ");
+            b = double.Parse(Console.ReadLine());
+
+            c = a;
+            a = b;
+            b = c;
+
+            Console.WriteLine($" \nValor invertido de A:{a} ");
+            Console.WriteLine($"\nValor invertido  de B:{b} ");
+
+            Console.ReadKey();

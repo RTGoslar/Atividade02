@@ -1,0 +1,23 @@
+ /* Façã um programa que leia um número N e imprima F1, F2 ou F3, conforme a condição:
+            F1, se N <= 10
+            F2, se N > 10 e N <= 100
+            F3, se N > 100                                                                 
+            */
+
+            Console.Write("Informe um numero: ");
+            double N = double.Parse(Console.ReadLine());
+
+            if (N <= 10)
+            {
+                Console.WriteLine(" F1 ");
+            }
+            else if (N > 10 && N <= 100)
+            {
+                Console.WriteLine(" F2 ");
+            }
+            else if (N > 100)
+            {
+                Console.WriteLine(" F3 ");
+            }
+
+            Console.ReadKey();

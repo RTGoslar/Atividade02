@@ -1,0 +1,15 @@
+   //Faça um programa que receba um número e diga se este número está no intervalo entre 100 e 200.
+
+            Console.Write("Digite um número: ");
+            double n = double.Parse(Console.ReadLine());
+
+            if (n >= 100 && n <= 200)
+            {
+                Console.WriteLine("Este número está entre 100 e 200");
+            }
+            else
+            {
+                Console.WriteLine("Este número NÃO está entre 100 e 200");
+            }
+
+            Console.ReadKey();

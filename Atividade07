@@ -1,0 +1,32 @@
+ /* Considere que o último concurso vestibular apresentou três provas: Português, Matemática e Conhecimentos Gerais. Considerando que
+             para cada candidato tem-se um registro contendo o seu nome e as notas obtidas em cada uma das provas, construa um programa que forneça:
+            a) o nome e as notas em cada prova do candidato
+            b) a média do candidato
+            c) uma informação dizendo de o canditado foi reprovado ou não. Considere que um condidato é aprovado se sua média for maior que 7.0
+            e se não apresentou nenhuma nota abaixo de 5.0*/
+
+            Console.Write("Informe o nome do aluno: ");
+            string aluno = (Console.ReadLine());
+
+            Console.Write("Informe a nota de Português: ");
+            double ntp = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe a nota de Matemática: ");
+            double ntm = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe a nota de Conhecimentos Gerais: ");
+            double ntcg = double.Parse(Console.ReadLine());
+
+            double media = (ntp + ntm + ntcg) / 3;
+
+            Console.WriteLine($"\nAluno: {aluno}\nPortugues: {ntp}\nMatemática: {ntm}\nConhecimentos Gerais: {ntcg}");
+
+            if (media >= 7 && ntp > 5 && ntm > 5 && ntcg > 5)
+            {
+                Console.WriteLine($"\nParabéns {aluno} Voce foi APROVADO com média: {media}");
+            }
+            else
+            {
+                Console.WriteLine($"\nAluno { aluno} Voce foi REPROVADO com média: {media}");
+            }
+            Console.ReadKey();

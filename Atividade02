@@ -1,0 +1,35 @@
+ /* Escrever um programa que leia dois valores inteiros distintos e informe qual é o maior... Elaborar um programa que lê três valores
+            a,b,c e os escreve. A seguir, encontre o maior dos três valores e o escreva com a mensagem : É o maior.*/
+
+            Console.Write("Informe o primeiro número: ");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.Write("Informe o segundo número: ");
+            int b = int.Parse(Console.ReadLine());
+
+            if (a > b)
+            {
+                Console.WriteLine($" O primeiro número é MAIOR: {a}");
+            }
+            else
+            {
+                Console.WriteLine($" O segundo número é MAIOR: {b}");
+            }
+
+            Console.Write("Informe o terceiro número: ");
+            int c = int.Parse(Console.ReadLine());
+
+            if (a > b && a > c)
+            {
+                Console.Write($"O primeiro É O MAIOR: {a}");
+            }
+            else if (b > a && b > c)
+            {
+                Console.Write($"O segundo É O MAIOR: {b}");
+            }
+            else if (c > a && c > b)
+            {
+                Console.Write($"O terceiro É O MAIOR: {c}");
+            }
+
+            Console.ReadKey();

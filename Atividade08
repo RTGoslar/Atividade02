@@ -1,0 +1,22 @@
+// Faça um programa que leia dois números e indique se são iguais ou se são diferentes. Mostre o maior e o menor(nesta sequência).
+
+            Console.Write("Informe o primeiro número: ");
+            double n1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Informe o segundo número: ");
+            double n2 = double.Parse(Console.ReadLine());
+
+            if (n1 != n2 && n1 > n2)
+            {
+                Console.Write($"Os números são diferentes, E o primeiro número {n1} é maior que o segundo {n2}");
+            }
+            else if (n2 != n1 && n1 < n2)
+            {
+                Console.Write($"Os números são Diferentes, E o segundo número {n2} é maior que o primeiro {n1}");
+            }
+            else if (n1 == n2)
+            {
+                Console.Write("Os números são iguais ");
+            }
+
+            Console.ReadKey();
